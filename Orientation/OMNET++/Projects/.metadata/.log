@@ -1,0 +1,733 @@
+!SESSION 2024-02-08 13:44:37.784 -----------------------------------------------
+eclipse.buildId=6.0.2.231006-7d5ca33dba
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient5.win32 4 0 2024-02-08 13:44:41.018
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient5.win32 [168]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.win; version="[5.1.3,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2024-02-08 13:44:41.380
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [192]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.win; version="[5.1.0,5.2.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.omnetpp.main 1 0 2024-02-08 13:46:29.741
+!MESSAGE OMNeT++ IDE 6.0.2.231006-7d5ca33dba started.
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-02-08 13:46:36.337
+!MESSAGE Restoring info for: C:\omnetpp-6.0.2-windows-x86_64\omnetpp-6.0.2\tools\win32.x86_64\mingw64\bin\python3.exe
+!STACK 0
+java.lang.RuntimeException: Restoring info for: C:\omnetpp-6.0.2-windows-x86_64\omnetpp-6.0.2\tools\win32.x86_64\mingw64\bin\python3.exe
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:458)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:284)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:581)
+	at org.omnetpp.scave.ScavePlugin.ensurePyDevInterpreterConfigured(ScavePlugin.java:139)
+	at org.omnetpp.scave.ScavePlugin.start(ScavePlugin.java:62)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.omnetpp.ide.OmnetppStartup.earlyStartup(OmnetppStartup.java:88)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2737)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: E:\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\OMNET++\Projects\.metadata\.plugins\org.python.pydev\v1_4tmxmf19f51lg9485kfc42z3y\modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:342)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:422)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:456)
+	... 29 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-02-08 13:46:37.713
+!MESSAGE Finished restoring information for: C:\omnetpp-6.0.2-windows-x86_64\omnetpp-6.0.2\tools\win32.x86_64\mingw64\bin\python3.exe at: E:\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\OMNET++\Projects\.metadata\.plugins\org.python.pydev\v1_4tmxmf19f51lg9485kfc42z3y
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: C:\omnetpp-6.0.2-windows-x86_64\omnetpp-6.0.2\tools\win32.x86_64\mingw64\bin\python3.exe at: E:\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\OMNET++\Projects\.metadata\.plugins\org.python.pydev\v1_4tmxmf19f51lg9485kfc42z3y
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:503)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:284)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:581)
+	at org.omnetpp.scave.ScavePlugin.ensurePyDevInterpreterConfigured(ScavePlugin.java:139)
+	at org.omnetpp.scave.ScavePlugin.start(ScavePlugin.java:62)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.omnetpp.ide.OmnetppStartup.earlyStartup(OmnetppStartup.java:88)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2737)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.omnetpp.main 4 0 2024-02-08 13:47:22.031
+!MESSAGE Cannot install inet4.5 because a project with that name already exists (rename or delete existing project to proceed)
+
+!ENTRY org.eclipse.cdt.ui 2 0 2024-02-08 13:48:56.341
+!MESSAGE Default project not found in New C/C++ Project Wizard
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 13:48:58.064
+!MESSAGE Indexed 'ticktocfirst' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.jface 4 0 2024-02-08 13:51:59.415
+!MESSAGE The command ("org.omnetpp.ned.editor.graph.Properties") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:367)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:634)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:690)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:927)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:750)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1051)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:379)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.jface 4 0 2024-02-08 13:51:59.416
+!MESSAGE The command ("org.omnetpp.ned.editor.graph.OpenType") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:367)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:634)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:690)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:927)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:750)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:673)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1227)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.processContents(MenuManagerRenderer.java:655)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeTopicChildAdded(MenuManagerRenderer.java:325)
+	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1051)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:379)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:355)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5141)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4773)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:237)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4113)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-08 14:14:27.563
+!MESSAGE IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+!STACK 0
+java.util.concurrent.TimeoutException: IJobChangeListener timeout detected. Further calls to IJobChangeListener may occur in random order and join(family) can return too soon. IJobChangeListener should return within 3000 ms. IJobChangeListener methods should not block. Possible deadlock.
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:106)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:537)
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1399)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:396)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:654)
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer.executeParamResolution(InifileAnalyzer.java:393)
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer.analyzeIfChanged(InifileAnalyzer.java:290)
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer.startAnalysisIfChanged(InifileAnalyzer.java:310)
+	at org.omnetpp.inifile.editor.text.InifileReconcileStrategy.reconcile(InifileReconcileStrategy.java:57)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2024-02-08 14:14:27.563
+!MESSAGE Thread that is running the IJobChangeListener: Worker-9: Ini file analysis
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer.paramResolutionJobDone(InifileAnalyzer.java:449)
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer$1.done(InifileAnalyzer.java:203)
+	at org.eclipse.core.internal.jobs.JobListeners$$Lambda$113/0x0000000100227430.notify(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEvent(JobListeners.java:160)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEventsAsync(JobListeners.java:140)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:80)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:550)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:754)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:83)
+
+All thread infos: 
+"main" prio=6 Id=1 RUNNABLE (in native)
+	at org.eclipse.swt.internal.win32.OS.WaitMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4770)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:339)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:993)
+	at org.eclipse.ui.internal.Workbench$1.eventLoopIdle(Workbench.java:480)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	...
+
+"Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.8.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.8.1/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@335b9d31
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@335b9d31
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+"Attach Listener" daemon prio=5 Id=5 RUNNABLE
+
+"Common-Cleaner" daemon prio=8 Id=12 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@60b92f0f
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@60b92f0f
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+	at java.base@17.0.8.1/java.lang.Thread.run(Unknown Source)
+	at java.base@17.0.8.1/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+
+"Notification Thread" daemon prio=9 Id=13 RUNNABLE
+
+"Active Thread: Equinox Container: 3452c11f-162c-434f-80e7-9b06a61f8700" prio=5 Id=15 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@492af343
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@492af343
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	...
+
+"Framework Event Dispatcher: Equinox Container: 3452c11f-162c-434f-80e7-9b06a61f8700" daemon prio=5 Id=17 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@7caf09a9
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@7caf09a9
+	at java.base@17.0.8.1/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Start Level: Equinox Container: 3452c11f-162c-434f-80e7-9b06a61f8700" daemon prio=5 Id=18 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@1372b118
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@1372b118
+	at java.base@17.0.8.1/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"SCR Component Actor" daemon prio=5 Id=19 WAITING on java.util.LinkedList@3a1a352e
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.LinkedList@3a1a352e
+	at java.base@17.0.8.1/java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.base@17.0.8.1/java.lang.Thread.run(Unknown Source)
+
+"EMF Reference Cleaner" daemon prio=5 Id=21 WAITING on java.lang.ref.ReferenceQueue$Lock@243469c5
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@243469c5
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+
+"Worker-JM" prio=5 Id=23 WAITING on java.util.ArrayList@2052deab
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.ArrayList@2052deab
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+
+"Gogo shell" prio=5 Id=25 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26ae51c8
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26ae51c8
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"Worker-0" prio=5 Id=28 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Git Repository Closer" daemon prio=6 Id=30 WAITING on java.lang.ref.ReferenceQueue$Lock@4a8b814c
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@4a8b814c
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:453)
+
+"Bundle File Closer" daemon prio=6 Id=31 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@7c9ab930
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@7c9ab930
+	at java.base@17.0.8.1/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"EventAdmin Async Event Dispatcher Thread" daemon prio=6 Id=34 WAITING on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@28ee877a
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@28ee877a
+	at java.base@17.0.8.1/java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"pool-1-thread-1" prio=5 Id=36 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@507b7c02
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@507b7c02
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"pool-2-thread-1" prio=5 Id=37 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@466c16a0
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@466c16a0
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"JNA Cleaner" daemon prio=6 Id=38 WAITING on java.lang.ref.ReferenceQueue$Lock@6f966464
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6f966464
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.8.1/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at com.sun.jna.internal.Cleaner$1.run(Cleaner.java:58)
+
+"FileSystemWatchService" daemon prio=5 Id=46 RUNNABLE (in native)
+	at java.base@17.0.8.1/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus0(Native Method)
+	at java.base@17.0.8.1/sun.nio.fs.WindowsNativeDispatcher.GetQueuedCompletionStatus(Unknown Source)
+	at java.base@17.0.8.1/sun.nio.fs.WindowsWatchService$Poller.run(Unknown Source)
+	at java.base@17.0.8.1/java.lang.Thread.run(Unknown Source)
+
+"Thread-10" daemon prio=2 Id=47 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331febbb
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@331febbb
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingDeque.takeFirst(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingDeque.take(Unknown Source)
+	...
+
+"Worker-8" prio=5 Id=71 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Worker-9: Ini file analysis" prio=5 Id=72 BLOCKED on java.lang.Object@1e70c201 owned by "org.eclipse.jface.text.reconciler.MonoReconciler" Id=553
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer.paramResolutionJobDone(InifileAnalyzer.java:449)
+	-  blocked on java.lang.Object@1e70c201
+	at org.omnetpp.inifile.editor.model.InifileAnalyzer$1.done(InifileAnalyzer.java:203)
+	at org.eclipse.core.internal.jobs.JobListeners$$Lambda$113/0x0000000100227430.notify(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEvent(JobListeners.java:160)
+	at org.eclipse.core.internal.jobs.JobListeners.sendEventsAsync(JobListeners.java:140)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:80)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:550)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:754)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@380f1ab6
+
+"org.eclipse.jface.text.reconciler.MonoReconciler" daemon prio=1 Id=91 TIMED_WAITING on org.eclipse.jface.text.reconciler.DirtyRegionQueue@421930ef
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.jface.text.reconciler.DirtyRegionQueue@421930ef
+	at org.eclipse.jface.text.reconciler.AbstractReconciler.delay(AbstractReconciler.java:572)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:181)
+
+"pool-3-thread-1" prio=5 Id=104 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@e975924
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@e975924
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.managedBlock(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	...
+
+"Worker-12: Win32 refresh daemon" prio=5 Id=138 RUNNABLE (in native)
+	at org.eclipse.core.internal.resources.refresh.win32.Win32Natives.WaitForMultipleObjects(Native Method)
+	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.waitForNotification(Win32Monitor.java:602)
+	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.run(Win32Monitor.java:539)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"org.eclipse.cdt.internal.ui.text.CReconciler" daemon prio=1 Id=277 TIMED_WAITING on org.eclipse.jface.text.reconciler.DirtyRegionQueue@4e8d28ea
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.jface.text.reconciler.DirtyRegionQueue@4e8d28ea
+	at org.eclipse.jface.text.reconciler.AbstractReconciler.delay(AbstractReconciler.java:572)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:181)
+
+"Worker-13" prio=5 Id=359 TIMED_WAITING on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at java.base@17.0.8.1/java.lang.Object.wait(Native Method)
+	-  waiting on org.eclipse.core.internal.jobs.WorkerPool@4df6a376
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"org.eclipse.jface.text.reconciler.MonoReconciler" daemon prio=1 Id=553 RUNNABLE
+	at java.management@17.0.8.1/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.8.1/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at java.management@17.0.8.1/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at org.eclipse.core.internal.jobs.JobListeners.waitAndSendEvents(JobListeners.java:120)
+	at org.eclipse.core.internal.jobs.JobManager.withWriteLock(JobManager.java:537)
+	at org.eclipse.core.internal.jobs.JobManager.schedule(JobManager.java:1399)
+	at org.eclipse.core.internal.jobs.InternalJob.schedule(InternalJob.java:396)
+	at org.eclipse.core.runtime.jobs.Job.schedule(Job.java:654)
+	...
+
+"ForkJoinPool.commonPool-worker-5" daemon prio=5 Id=554 TIMED_WAITING on java.util.concurrent.ForkJoinPool@690a6b78
+	at java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@690a6b78
+	at java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkUntil(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.8.1/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+!SESSION 2024-02-08 14:16:27.036 -----------------------------------------------
+eclipse.buildId=6.0.2.231006-7d5ca33dba
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ecf.provider.filetransfer.httpclient5.win32 4 0 2024-02-08 14:16:28.179
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ecf.provider.filetransfer.httpclient5.win32 [168]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.win; version="[5.1.3,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2024-02-08 14:16:28.339
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [192]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.win; version="[5.1.0,5.2.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.omnetpp.main 1 0 2024-02-08 14:16:35.597
+!MESSAGE OMNeT++ IDE 6.0.2.231006-7d5ca33dba started.
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-02-08 14:17:08.728
+!MESSAGE Info: Rebuilding internal caches: E:\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\OMNET++\Projects\.metadata\.plugins\com.python.pydev.analysis\python_v1_4tmxmf19f51lg9485kfc42z3y\python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 14:17:34.987
+!MESSAGE Indexed 'ticktocfirst' (1 sources, 536 headers) in 14.3 sec: 82,464 declarations; 151,315 references; 0 unresolved inclusions; 3 syntax errors; 163 unresolved names (0.07%)
+
+!ENTRY org.eclipse.ui 4 4 2024-02-08 14:31:23.850
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: File /ticktocfirst/tictocfirt.ned does not exist
+	at org.omnetpp.ned.editor.NedEditor.init(NedEditor.java:183)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.lambda$27(StackRenderer.java:1130)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3253)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1892)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:332)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.omnetpp.ned.editor 2 0 2024-02-08 14:31:23.851
+!MESSAGE File /ticktocfirst/tictocfirt.ned does not exist
+
+!ENTRY org.eclipse.ui.console 4 0 2024-02-08 15:43:13.465
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:278)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:182)
+	at org.omnetpp.launch.tabs.OmnetppLaunchUtils.doPrintToConsole(OmnetppLaunchUtils.java:995)
+	at org.omnetpp.launch.tabs.OmnetppLaunchUtils.printToConsole(OmnetppLaunchUtils.java:1010)
+	at org.omnetpp.launch.SimulationLauncherJob.dumpPostMortemInfo(SimulationLauncherJob.java:206)
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:133)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2024-02-08 15:43:13.479
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:278)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:182)
+	at org.omnetpp.launch.tabs.OmnetppLaunchUtils.doPrintToConsole(OmnetppLaunchUtils.java:995)
+	at org.omnetpp.launch.tabs.OmnetppLaunchUtils.printToConsole(OmnetppLaunchUtils.java:1010)
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
