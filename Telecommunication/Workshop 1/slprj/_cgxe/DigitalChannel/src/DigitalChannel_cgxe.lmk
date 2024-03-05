@@ -1,0 +1,45 @@
+CC     = "C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -w -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map
+LIBFLAGS = 
+
+OBJECTS = \
+	"c_mexapi_version.obj"\
+	"lccstub.obj"\
+	"DigitalChannel_cgxe.obj"\
+	"m_yxoyDbRtc1w1uCNvrOl7eB.obj"\
+	"DigitalChannel_cgxe_registry.obj"\
+	"DigitalChannel_cgxe.def"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmx.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmex.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmat.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libut.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libemlrt.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwcgxert.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwcgxeooprt.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwslexec_simbridge.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwslccrt.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwstringutil.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libcovrt.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"\
+	"C:\Program Files\MATLAB\R2023a\extern\lib\win64\microsoft\libmwdsp_halidesim.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2023a\extern\include"  -I"C:\Program Files\MATLAB\R2023a\simulink\include"  -I"C:\Program Files\MATLAB\R2023a\rtw\c\src"  -I"C:\Users\PANKAJA\OneDrive\acadamics\uom engineering\academics\semester 2\en1094 laboratory practices\uom_s2_en1094_laboratory-practices\telecommunication\workshop 1\slprj\_cgxe\digitalchannel\src"  -I"C:\Users\PANKAJA\OneDrive\acadamics\uom engineering\academics\semester 2\en1094 laboratory practices\uom_s2_en1094_laboratory-practices\telecommunication\workshop 1"  -I"C:\Users\PANKAJA\OneDrive\acadamics\uom engineering\academics\semester 2\en1094 laboratory practices\uom_s2_en1094_laboratory-practices\telecommunication\workshop 1\task11"  -I"C:\Users\PANKAJA\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\UOM_S2_EN1094_Laboratory-Practices\Telecommunication\Workshop 1\slprj\_cprj"  -I"C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\include64"  -I"C:\Users\PANKAJA\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\UOM_S2_EN1094_Laboratory-Practices\Telecommunication\Workshop 1\slprj\_cgxe\DigitalChannel\src"  -I"C:\Users\PANKAJA\OneDrive\Acadamics\UOM Engineering\Academics\Semester 2\EN1094 Laboratory Practices\UOM_S2_EN1094_Laboratory-Practices\Telecommunication\Workshop 1" 
+ 
+
+DigitalChannel_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o DigitalChannel_cgxe.mexw64 @DigitalChannel_cgxe.lmko
+c_mexapi_version.obj :	"C:\Program Files\MATLAB\R2023a\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2023a\extern\version\c_mexapi_version.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2023a\sys\lcc64\lcc64\mex\lccstub.c"
+DigitalChannel_cgxe.obj :	"DigitalChannel_cgxe.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "DigitalChannel_cgxe.c"
+m_yxoyDbRtc1w1uCNvrOl7eB.obj :	"m_yxoyDbRtc1w1uCNvrOl7eB.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_yxoyDbRtc1w1uCNvrOl7eB.c"
+DigitalChannel_cgxe_registry.obj :	"DigitalChannel_cgxe_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "DigitalChannel_cgxe_registry.c"
