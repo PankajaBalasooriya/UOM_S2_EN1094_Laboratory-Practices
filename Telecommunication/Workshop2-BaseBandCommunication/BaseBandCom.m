@@ -129,3 +129,43 @@ end
 pause(10);
 sound(5*decoded_audio_samples,Fs)
 
+figure(1)
+subplot(1,2,1)
+plot(audio_samples)
+title('Original Audio Signal')
+xlabel('t (s)')
+ylabel('Amplitude')
+subplot(1,2,2)
+plot(decoded_audio_samples);
+title('Decoded Audio Signal')
+xlabel('t (s)')
+ylabel('Amplitude')
+
+L_1 = size_audio_samples;
+Audio_freq = fft(audio_samples);
+Audio_freq_norm = abs(Audio_freq/L_1);
+Audio_freq_norm_one = Audio_freq_norm(1:L_1/2+1);
+Audio_freq_norm_one(2:end-1) = 2*Audio_freq_norm_one(2:end-1);
+L_2 = samples_per_bit*number_of_bits;
+X_freq = fft(X);
+X_freq_norm = abs(X_freq/L_2);
+X_freq_norm_one = X_freq_norm(1:L_2/2+1);
+X_freq_norm_one(2:end-1) = 2*X_freq_norm_one(2:end-1);
+f_1 = Fs*(0:(L_1/2))/L_1;
+f_2 = sampling_rate*(0:(L_2/2))/L_2;
+figure(2)
+subplot(1,2,1)
+plot(f_1,Audio_freq_norm_one);
+title('Single-Sided Amplitude Spectrum of the Original Audio Stream');
+xlabel('f (Hz)')
+ylabel('|P1(f)|')
+subplot(1,2,2)
+plot(f_2,X_freq_norm_one);
+title('Single-Sided Amplitude Spectrum of X(t)')
+xlabel('f (Hz)')
+ylabel('|P1(f)|')
+
+
+%BER calculation
+BER = sum(decoded_bit_stream - bit_stream)/length(bit_stream);
+disp(BER);
