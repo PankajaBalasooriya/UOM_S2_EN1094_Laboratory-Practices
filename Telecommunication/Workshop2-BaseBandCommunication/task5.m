@@ -1,12 +1,12 @@
 % Sampling
 Fs = 6000; 
 qbits = 8; 
-recObj = audiorecorder(Fs,qbits,1); 
-disp('Start speaking.') 
-recordblocking(recObj, 5);
-disp('End of Recording.');
-audio_samples = getaudiodata(recObj);
-%[audio_samples,Fs] = audioread('Recording.wav');
+% recObj = audiorecorder(Fs,qbits,1); 
+% disp('Start speaking.') 
+% recordblocking(recObj, 5);
+% disp('End of Recording.');
+% audio_samples = getaudiodata(recObj);
+[audio_samples,Fs] = audioread('Recording.wav');
 
 
 % quantizing

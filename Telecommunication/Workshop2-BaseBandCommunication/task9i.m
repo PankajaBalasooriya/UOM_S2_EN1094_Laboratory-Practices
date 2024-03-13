@@ -1,16 +1,18 @@
-Fs = 6000; %The sampling frequency used to sample the audio
-qbits = 8; %The number of bits used to encode a single sample of the audio
-%recObj = audiorecorder(Fs,qbits,1); %Starting the audio recorder object
-%disp('Start speaking.') %Recording audio fro 5 seconds
-%recordblocking(recObj, 5);
-%disp('End of Recording.');
+% Sampling
+Fs = 6000; 
+qbits = 8; 
+% recObj = audiorecorder(Fs,qbits,1); 
+% disp('Start speaking.') 
+% recordblocking(recObj, 5);
+% disp('End of Recording.');
+% audio_samples = getaudiodata(recObj);
 [audio_samples,Fs] = audioread('Recording.wav');
-
 x = [];
 y = [];
+%% 
 
 
-audio_samples = getaudiodata(recObj); %array containing samples of the recorded audio
+
 siz = size(audio_samples); %Quantizing the audio samples (Each sample is quantized with 8 bits)
 size_audio_samples = siz(1);
 number_of_bits = qbits*size_audio_samples;
@@ -35,7 +37,7 @@ end
 end
 end
 samples_per_bit = 100;
-for Amplitude = -10 : 1 :10
+for Amplitude = -10 : 1 :0
 sampling_rate = Fs*qbits*samples_per_bit; %The sampling rate used to represent the
 %anlog singal in MATLAB
 fc = sampling_rate/100; % frequency of the sinosoid
@@ -125,7 +127,8 @@ x = [x,Amplitude];
 y = [y,BER];
 
 end
-
+disp(x)
+disp(y)
 plot(x,y);
 xlabel('Amplitude'); 
 ylabel('BER'); 

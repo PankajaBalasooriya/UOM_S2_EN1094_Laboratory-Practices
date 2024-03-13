@@ -1,10 +1,12 @@
-Fs = 6000; %The sampling frequency used to sample the audio
-qbits = 8; %The number of bits used to encode a single sample of the audio
-recObj = audiorecorder(Fs,qbits,1); %Starting the audio recorder object
-disp('Start speaking.') %Recording audio fro 5 seconds
-recordblocking(recObj, 5);
-disp('End of Recording.');
-audio_samples = getaudiodata(recObj); %array containing samples of the recorded audio
+% Sampling
+Fs = 6000; 
+qbits = 8; 
+% recObj = audiorecorder(Fs,qbits,1); 
+% disp('Start speaking.') 
+% recordblocking(recObj, 5);
+% disp('End of Recording.');
+% audio_samples = getaudiodata(recObj);
+[audio_samples,Fs] = audioread('Recording.wav');
 
 
 siz = size(audio_samples); %Quantizing the audio samples (Each sample is quantized with 8 bits)
