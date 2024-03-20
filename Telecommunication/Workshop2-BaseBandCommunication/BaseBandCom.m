@@ -40,7 +40,7 @@ Amplitude = -5;
 %The sampling rate used to represent the anlog singal in MATLAB
 sampling_rate = Fs*qbits*samples_per_bit; 
 % frequency of the sinosoid
-fc = sampling_rate/100; 
+fc = sampling_rate/100;
 Wc = 2*pi*fc;
 %Sample time period
 delt = 1/sampling_rate; 
