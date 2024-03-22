@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim
 vfulladder
-Z1 !s110 1710927809
+Z1 !s110 1710935766
 !i10b 1
 !s100 1B@8Eh@7_ezM=W^F9O0762
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I7^NJF>dje[WTdTcdaaH900
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1710927809
+Z4 w1710935765
 Z5 8workshop5.vo
 Z6 Fworkshop5.vo
-!i122 4
+!i122 6
 L0 32 140
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1710927809.000000
+Z8 !s108 1710935766.000000
 Z9 !s107 workshop5.vo|
 Z10 !s90 -work|work|workshop5.vo|
 !i113 1
@@ -40,10 +40,10 @@ R2
 I[QEoR[d?4dM1K0FAF=mEa3
 R3
 R0
-w1710927808
+w1710935764
 8fulladderWaveform.vwf.vt
 FfulladderWaveform.vwf.vt
-!i122 5
+!i122 7
 L0 30 53
 R7
 r1
@@ -112,7 +112,7 @@ R0
 R4
 R5
 R6
-!i122 4
+!i122 6
 L0 173 34
 R7
 r1

@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Mar 20 15:13:28 2024
+    Info: Processing started: Wed Mar 20 17:26:03 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off workshop5 -c workshop5 --vector_source="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/fulladderWaveform.vwf" --testbench_file="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/fulladderWaveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Mar 20 15:13:28 2024
+    Info: Processing started: Wed Mar 20 17:26:04 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/" workshop5 -c workshop5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file workshop5.vo in folder "C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4649 megabytes
-    Info: Processing ended: Wed Mar 20 15:13:29 2024
+    Info: Processing ended: Wed Mar 20 17:26:05 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
@@ -85,28 +85,29 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:29 on Mar 20,2024
+# Start time: 17:26:06 on Mar 20,2024
 # vlog -work work workshop5.vo 
+
 # -- Compiling module fulladder
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	fulladder
-# End time: 15:13:29 on Mar 20,2024, Elapsed time: 0:00:00
+# End time: 17:26:06 on Mar 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:29 on Mar 20,2024
+# Start time: 17:26:06 on Mar 20,2024
 # vlog -work work fulladderWaveform.vwf.vt 
 
 # -- Compiling module fulladder_vlg_vec_tst
 # 
 # Top level modules:
 # 	fulladder_vlg_vec_tst
-# End time: 15:13:29 on Mar 20,2024, Elapsed time: 0:00:00
+# End time: 17:26:06 on Mar 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.fulladder_vlg_vec_tst 
-# Start time: 15:13:29 on Mar 20,2024
+# Start time: 17:26:07 on Mar 20,2024
 # Loading work.fulladder_vlg_vec_tst
 # Loading work.fulladder
 # Loading work.hard_block
@@ -114,9 +115,10 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#26
+
 # ** Note: $finish    : fulladderWaveform.vwf.vt(51)
 #    Time: 80 ns  Iteration: 0  Instance: /fulladder_vlg_vec_tst
-# End time: 15:13:30 on Mar 20,2024, Elapsed time: 0:00:01
+# End time: 17:26:07 on Mar 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -129,7 +131,7 @@ Reading C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/workshop5_20240320151330.sim.vwf
+Writing the resulting VWF to C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/workshop5_20240320172607.sim.vwf
 
 Finished VCD to VWF conversion.
 

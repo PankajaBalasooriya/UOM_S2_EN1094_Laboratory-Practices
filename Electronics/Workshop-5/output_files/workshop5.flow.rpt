@@ -1,5 +1,5 @@
 Flow report for workshop5
-Wed Mar 20 15:13:29 2024
+Wed Mar 20 17:26:05 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 20 15:13:29 2024       ;
+; Flow Status                        ; Successful - Wed Mar 20 17:26:05 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; workshop5                                   ;
 ; Top-level Entity Name              ; fulladder                                   ;
@@ -99,7 +99,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4931 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:00                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,6 +116,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; PANKAJA-ROG      ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; PANKAJA-ROG      ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; PANKAJA-ROG      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PANKAJA-ROG      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; PANKAJA-ROG      ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -124,6 +128,8 @@ quartus_map --read_settings_files=on --write_settings_files=off workshop5 -c wor
 quartus_fit --read_settings_files=off --write_settings_files=off workshop5 -c workshop5
 quartus_asm --read_settings_files=off --write_settings_files=off workshop5 -c workshop5
 quartus_sta workshop5 -c workshop5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off workshop5 -c workshop5 --vector_source="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/fulladderWaveform.vwf" --testbench_file="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/fulladderWaveform.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/" workshop5 -c workshop5
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off workshop5 -c workshop5 --vector_source="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/fulladderWaveform.vwf" --testbench_file="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/fulladderWaveform.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/" workshop5 -c workshop5
 

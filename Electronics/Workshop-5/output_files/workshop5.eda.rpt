@@ -1,5 +1,5 @@
 EDA Netlist Writer report for workshop5
-Wed Mar 20 15:13:29 2024
+Wed Mar 20 17:26:05 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 20 15:13:29 2024 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 20 17:26:05 2024 ;
 ; Revision Name             ; workshop5                             ;
 ; Top-level Entity Name     ; fulladder                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Mar 20 15:13:28 2024
+    Info: Processing started: Wed Mar 20 17:26:04 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim/" workshop5 -c workshop5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file workshop5.vo in folder "C:/Users/PANKAJA/OneDrive/Acadamics/UOM Engineering/Academics/Semester 2/EN1094 Laboratory Practices/UOM_S2_EN1094_Laboratory-Practices/Electronics/Workshop-5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4649 megabytes
-    Info: Processing ended: Wed Mar 20 15:13:29 2024
+    Info: Processing ended: Wed Mar 20 17:26:05 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
